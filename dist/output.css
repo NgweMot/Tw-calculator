@@ -568,6 +568,10 @@ video {
   }
 }
 
+.row-auto {
+  grid-row: auto;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -583,6 +587,11 @@ video {
 
 .h-16 {
   height: 4rem;
+}
+
+.columns-12 {
+  -moz-columns: 12;
+       columns: 12;
 }
 
 .justify-between {
@@ -622,6 +631,10 @@ video {
   background-color: rgb(202 138 4 / var(--tw-bg-opacity));
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .p-10 {
   padding: 2.5rem;
 }
@@ -645,15 +658,6 @@ video {
 
 .font-bold {
   font-weight: 700;
-}
-
-.font-thin {
-  font-weight: 100;
-}
-
-.text-gray-200 {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .text-white {
