@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body>
+    <div class="p-10" id="app">
+      <div class="bg-gray-300 shadow-lg p-8 rounded-lg container mx-auto">
+        <div
+          id="output"
+          class="rounded-lg border h-16 bg-blue-400 text-end font-bold p-3 mb-3"
+        >
+          <div class="p-1 text-sm " id="previousDataText"></div>
+          <div class="p-1" id="currentDataText"></div>
+        </div>
+        <div class="row">
+          <div class="col-12 flex justify-between mb-3">
+            <button
+              class="bg-red-950 text-white key font-bold p-3 rounded-lg"
+              id="ACButton"
+            >
+              AC
+            </button>
+            <button
+              class=" bg-red-950 text-white key font-bold p-3 rounded-lg"
+              id="DelButton"
+            >
+              Del
+            </button>
+            <button
+              class="data-number bg-yellow-600 text-white key font-bold p-3 rounded-lg"
+              id=""
+            >
+              .
+            </button>
+            <button
+              class="data-operator bg-yellow-600 text-white key font-bold p-3 rounded-lg"
+            >
+              /
+            </button>
+          </div>
+          <div class="col-12 flex justify-between mb-3">
+            <button
+              class="data-number bg-sky-950 text-white key font-bold p-3 rounded-lg"
+            >
+              7
+            </button>
+            <button
+              class="data-number bg-sky-950 text-white key font-bold p-3 rounded-lg"
+            >
+              8
+            </button>
+            <button
+              class="data-number bg-sky-950 text-white key font-bold p-3 rounded-lg"
+            >
+              9
+            </button>
+            <button
+              class="data-operator bg-yellow-600 text-white key font-bold p-3 rounded-lg"
+            >
+              *
+            </button>
+          </div>
+          <div class="col-12 flex justify-between mb-3">
+            <button
+              class="data-number bg-sky-950 text-white key font-bold p-3 rounded-lg"
+            >
+              4
+            </button>
+            <button
+              class="data-number bg-sky-950 text-white key font-bold p-3 rounded-lg"
+            >
+              5
+            </button>
+
+            <button
+              class="data-number bg-sky-950 text-white key font-bold p-3 rounded-lg"
+            >
+              6
+            </button>
+            <button
+              class="data-operator bg-yellow-600 text-white key font-bold p-3 rounded-lg"
+            >
+              -
+            </button>
+          </div>
+          <div class="col-12 flex justify-between mb-3">
+            <button
+              class="data-number bg-sky-950 text-white key font-bold p-3 rounded-lg"
+            >
+              1
+            </button>
+            <button
+              class="data-number bg-sky-950 text-white key font-bold p-3 rounded-lg"
+            >
+              2
+            </button>
+            <button
+              class="data-number bg-sky-950 text-white key font-bold p-3 rounded-lg"
+            >
+              3
+            </button>
+            <button
+              class="data-operator bg-yellow-600 text-white key font-bold p-3 rounded-lg"
+            >
+              +
+            </button>
+          </div>
+          <div class="col-12 flex justify-between mb-3">
+            <button
+              class="data-number bg-sky-950 text-white key font-bold p-3 rounded-lg"
+            >
+              00
+            </button>
+            <button
+              class="data-number bg-sky-950 text-white key font-bold p-3 rounded-lg"
+            >
+              0
+            </button>
+            <button
+              class="equal-button data-number bg-sky-950 text-white key font-bold p-3 rounded-lg" id="equalButton"
+            >
+              =
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="JS/app.js"></script>
+  </body>
+</html>

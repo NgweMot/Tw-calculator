@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.container{
+    width: 300px;
+}
+button{
+    width: 50px;
+}
+.equal-button{
+    width: 110px;
+}
