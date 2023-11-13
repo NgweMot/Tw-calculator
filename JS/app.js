@@ -1,16 +1,17 @@
-const previousDataText = document.querySelector("#previousDataText");
-const currentDataText = document.querySelector("#currentDataText");
+// const previousDataText = document.querySelector("#previousDataText");
+// const currentDataText = document.querySelector("#currentDataText");
 const dataNumberButtons = document.querySelectorAll(".data-number");
 const dataOperatorButtons = document.querySelectorAll(".data-operator");
 const ACButton = document.querySelector("#ACButton");
 const DelButton = document.querySelector("#DelButton");
 const equalButton = document.querySelector("#equalButton");
 const output = document.querySelector("#output");
+const result = document.querySelector("#result");
+
 
 class Calculator {
-  constructor(previousDataText, currentDataText) {
-    this.previousDataText = previousDataText;
-    this.currentDataText = currentDataText;
+  constructor(result) {
+   this.result=result;
     this.clear();
   }
   clear() {
@@ -78,18 +79,18 @@ class Calculator {
     }
   }
   updateDisplay() {
-    this.currentDataText.innerText = this.getDisplayNumber(this.currentOperand);
+    // this.currentDataText.innerText = this.getDisplayNumber(this.currentOperand);
     if (this.operation != null) {
-      this.previousDataText.innerText = `${this.getDisplayNumber(
+      this.result.innerText = `${this.getDisplayNumber(
         this.previousOperand
-      )}${this.operation}`;
+      )}${this.operation}${this.getDisplayNumber(this.currentOperand)}`;
     }else{
-        this.previousDataText.innerText=""  ;
+        this.result.innerText=this.currentOperand  ;
     }
   }
 }
 
-const calculator = new Calculator(previousDataText, currentDataText);
+const calculator = new Calculator(result);
 dataNumberButtons.forEach((button) => {
   button.addEventListener("click", () => {
     calculator.appendNumber(button.innerText);
